@@ -1,10 +1,12 @@
 # LogAnalysis
 
+Running under Win10
+--
 To run this project you will need Git Bash, Python 3 & Vagrant instled on your machine.
 
 Copy files into your local vagrant folder.
 
-Copy udacity DB file into your local vagrant folder.
+Copy Udacity DB file into your local vagrant folder (file is uncluded).
 
 Run Bash, navigate to your vagrant folder. 
 
