@@ -6,7 +6,7 @@ To run this project you will need Git Bash, Python 3 & Vagrant instled on your m
 
 Copy files into your local vagrant folder.
 
-Copy Udacity DB file into your local vagrant folder (file is uncluded).
+Copy Udacity DB file into your local vagrant folder (file not included).
 
 Run Bash, navigate to your vagrant folder. 
 
