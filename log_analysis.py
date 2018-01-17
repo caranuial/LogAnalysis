@@ -30,7 +30,7 @@ def yourFunc():
              "join authors on articles.author = authors.id group by "
              "authors.name order by count(*) desc;")
     cursor.execute(query)
-    print("Top 3 articles of all time:")
+    print("Top authors of all time:")
     print("")
     for (name, accesses) in cursor:
         print("{} - {} views".format(name, accesses))
@@ -40,7 +40,7 @@ def yourFunc():
              "count(*) as total, sum((status != '200 OK')::int)::float as "
              "err from log group by date) as errors where err/total > 0.01;")
     cursor.execute(query)
-    print("Top authors of all time:")
+    print("Days with more than 1% of requests errors:")
     print("")
     for (date, ratio) in cursor:
         print("{} - {} % errors".format(date, ratio))
