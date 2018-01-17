@@ -4,12 +4,18 @@ To run this project you will need Git Bash, Python 3 & Vagrant instled on your m
 
 Copy files into your local vagrant folder.
 
-Run Bash, navigate to your vagrant folder.
+Copy udacity DB file into your local vagrant folder.
 
-Run Vagrant.
+Run Bash, navigate to your vagrant folder. 
 
-Log into it.
+Run Vagrant. (vagrant up)
 
-Navigate into and run "python log_analysis.py"
+Log into it. (winpty vagrant ssh)
+
+Navigate to your vagrant folder (cd /vagrant)
+
+Load DB (psql -d news -f newsdata.sql).
+
+Run program (python log_analysis.py)
 
 Next you will see results in comand line.
