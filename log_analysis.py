@@ -4,15 +4,19 @@ import psycopg2
 
 
 def connect(database_name="news"):
+    """Return the connection and cursor of called DB."""
     try:
         db = psycopg2.connect("dbname={}".format(database_name))
         cursor = db.cursor()
         return db, cursor
     except:
+        print("Problem with conecting to the DB")
+        print("DB error:")
         print("<error message>")
 
 
-def yourFunc():
+def mainQuerer():
+    """Runs log analyses queries & Display output to console"""
     db, cursor = connect()
 
     query = ("select title, count (*) accesses from log join articles "
@@ -47,4 +51,4 @@ def yourFunc():
     db.close()
 
 
-yourFunc()
+mainQuerer()
