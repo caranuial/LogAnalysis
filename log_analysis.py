@@ -9,10 +9,10 @@ def connect(database_name="news"):
         db = psycopg2.connect("dbname={}".format(database_name))
         cursor = db.cursor()
         return db, cursor
-    except:
+    except Exception as e:
         print("Problem with conecting to the DB")
         print("DB error:")
-        print("<error message>")
+        print("{}".format(e))
 
 
 def mainQuerer():
